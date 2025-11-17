@@ -1,0 +1,119 @@
+:root {
+	--error-title-color: #991B1B;
+	--error-text-color: #B45309;
+	--error-bg-color: #FEF2F2;
+	--error-icon-color: #F87171;
+
+	--warning-title-color: #92400E;
+	--warning-text-color: #B45309;
+	--warning-bg-color: #FFFBEB;
+	--warning-icon-color: #FBBF24;
+
+	--success-title-color: #065F46;
+	--success-text-color: #047857;
+	--success-bg-color: #ECFDF5;
+	--success-icon-color: #34D399;
+
+	--neutral-title-color: #1E40AF;
+	--neutral-text-color: #1C51B9;
+	--neutral-bg-color: #EFF6FF;
+	--neutral-icon-color: #60A5FA;
+}
+
+
+.banner{
+	display: flex;
+	flex-direction: row;
+	gap: .75rem;
+	width: 90%;
+	max-width: 55rem;
+	background-color: white;
+	color: black;
+	border-radius: 6px;
+	padding: 1.125rem;
+	font-size: 0.875rem;
+	line-height: 1.4;
+}
+
+.banner span{
+	display: block;
+}
+
+.banner .banner-title{
+	font-weight: 500;
+}
+
+.banner .banner-text{
+	font-weight: 400;
+	margin-top: 0.35rem;
+}
+
+.banner i{
+	font-size: 1rem;
+	height: 1rem;  
+	line-height: 1.5rem;
+}
+
+.banner.success {
+	background-color: var(--success-bg-color);
+}
+
+.banner.success .banner-title{
+	color: var(--success-title-color);
+}
+
+.banner.success .banner-text{
+	color: var(--success-text-color);
+}
+
+.banner.success i{
+	color: var(--success-icon-color);
+}
+
+.banner.warning {
+	background-color: var(--warning-bg-color);
+}
+
+.banner.warning .banner-title{
+	color: var(--warning-title-color);
+}
+
+.banner.warning .banner-text{
+	color: var(--warning-text-color);
+}
+
+.banner.warning i{
+	color: var(--warning-icon-color);
+}
+
+.banner.error {
+	background-color: var(--error-bg-color);
+}
+
+.banner.error .banner-title{
+	color: var(--error-title-color);
+}
+
+.banner.error .banner-text{
+	color: var(--error-text-color);
+}
+
+.banner.error i{
+	color: var(--error-icon-color);
+}
+
+.banner.neutral {
+	background-color: var(--neutral-bg-color);
+}
+
+.banner.neutral .banner-title{
+	color: var(--neutral-title-color);
+}
+
+.banner.neutral .banner-text{
+	color: var(--neutral-text-color);
+}
+
+.banner.neutral i{
+	color: var(--neutral-icon-color);
+}

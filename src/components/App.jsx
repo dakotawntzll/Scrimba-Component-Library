@@ -1,6 +1,9 @@
 import React from "react"
-import Button from "./Button.jsx"
+import Badge from "./Badge.jsx"
 import Banner from "./Banner.jsx"
+import Card from "./Card.jsx"
+import { FaCircleInfo } from "react-icons/fa6";
+import Testimonial from "./Testimonial/index.jsx";
 
 export default function App(){
 
@@ -8,35 +11,33 @@ export default function App(){
     return (
 		<main>
 			
-
-
 		</main>
     )
 }
 
 
-/* <div className="component-container">
-	<Button>Badge</Button>
-	<Button color="red">Badge</Button>
-	<Button color="yellow">Badge</Button>
-	<Button color="green">Badge</Button>
-	<Button color="blue">Badge</Button>
-	<Button color="indigo">Badge</Button>
-	<Button color="purple">Badge</Button>
-	<Button color="pink">Badge</Button>
+{/* <div className="component-container">
+	<Badge>Badge</Badge>
+	<Badge color="red">Badge</Badge>
+	<Badge color="yellow">Badge</Badge>
+	<Badge color="green">Badge</Badge>
+	<Badge color="blue">Badge</Badge>
+	<Badge color="indigo">Badge</Badge>
+	<Badge color="purple">Badge</Badge>
+	<Badge color="pink">Badge</Badge>
 </div>
 <div className="component-container">
-	<Button variant="pill">Badge</Button>
-	<Button variant="pill" color="red">Badge</Button>
-	<Button variant="pill" color="yellow">Badge</Button>
-	<Button variant="pill" color="green">Badge</Button>
-	<Button variant="pill" color="blue">Badge</Button>
-	<Button variant="pill" color="indigo">Badge</Button>
-	<Button variant="pill" color="purple">Badge</Button>
-	<Button variant="pill" color="pink">Badge</Button>
-</div> */
+	<Badge variant="pill">Badge</Badge>
+	<Badge variant="pill" color="red">Badge</Badge>
+	<Badge variant="pill" color="yellow">Badge</Badge>
+	<Badge variant="pill" color="green">Badge</Badge>
+	<Badge variant="pill" color="blue">Badge</Badge>
+	<Badge variant="pill" color="indigo">Badge</Badge>
+	<Badge variant="pill" color="purple">Badge</Badge>
+	<Badge variant="pill" color="pink">Badge</Badge>
+</div> */}
 
-/* <Banner 
+{{/* <Banner 
 	text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam." 
 	variant="success"
 />
@@ -52,4 +53,10 @@ export default function App(){
 	text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam." 
 	variant="neutral"
 	title="Wow"
-/> */
+/>  */}}
+
+{/* <Card 
+	icon={<FaCircleInfo/>}  
+	title="Easy Deployment"
+	text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis."
+/> */}
