@@ -3,14 +3,21 @@ import Badge from "./Badge.jsx"
 import Banner from "./Banner.jsx"
 import Card from "./Card.jsx"
 import { FaCircleInfo } from "react-icons/fa6";
-import Testimonial from "./Testimonial/index.jsx";
+import TestimonialWithImage from "./Testimonial/TestimonialWithImage.jsx";
+
 
 export default function App(){
 
 	
     return (
 		<main>
-			
+			<TestimonialWithImage 
+				image="https://img.freepik.com/free-photo/smiley-african-woman-with-golden-earrings_23-2148747979.jpg?semt=ais_hybrid&w=740&q=80" 
+				alt="Portrait of May Anderson"
+				reviewer="May Anderson"
+				role="Workcation, CTO"
+				quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
+			/>
 		</main>
     )
 }
