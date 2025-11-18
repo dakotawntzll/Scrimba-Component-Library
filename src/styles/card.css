@@ -6,6 +6,9 @@
 	padding: 0 1.5rem 1.5rem;
 	text-align: center;
 	border-radius: 8px;
+	margin-top: 1.5rem;
+	display: block;
+	overflow: visible;
 }
 
 .card:hover{

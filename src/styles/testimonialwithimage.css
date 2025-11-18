@@ -1,12 +1,16 @@
+.testimonial-wrapper{
+	width: 100%;
+	padding: 2rem 0; 
+}
+
 .testimonial{
 	width: 100%;
 	background-color: #2545B8;
-	padding: 0 1.5rem 0 4.5rem;
+	padding: 0 1.5rem 0 max(4.5rem, 5%);
 	display: flex;
 	align-items: center;
 	gap: 2rem;
 	max-height: 25rem;
-	justify-content: space-around;
 }
 
 .testimonial .image-wrapper {
@@ -39,90 +43,134 @@
 .text-wrapper .quote{
 	font-weight: 500;
 	font-size: 1.5rem;
-	line-height: 1.33;
+	line-height: 1.5;
 	margin: 1.5rem 0;
 }
 
 .text-wrapper .reviewer{
 	font-weight: 700;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.3;
 }
 
 .text-wrapper .role{
 	font-weight: 500;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.3;
 }
 
-@media (max-width: 53rem) {
+@media (min-width: 90rem){
+	.testimonial{
+		justify-content: center ;
+	}
+}
+
+@media (max-width: 52.5rem) {
+
+	.testimonial-wrapper{
+		padding: 0.8rem 0; 
+	}
 
 	.testimonial{
-		padding: 0 2% 0 5%;
-		gap: 1.5rem;
+		padding: 0 0.5rem 0 1rem;
+		gap: 1rem;
 		max-height: 18rem;
 	}
 
 	.testimonial .image-wrapper {
 		max-height: 20rem;
-		aspect-ratio: 3 / 4;
-		overflow: hidden;
-		border-radius: 12px;
+		aspect-ratio: 2.8 / 4;
 	}
 
 	.text-wrapper i{
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 	}
 
 	.text-wrapper .quote{
 		font-weight: 500;
 		font-size: 1rem;
-		line-height: 1.2;
+		line-height: 1.3;
 		color: #FFFFFF;
-		margin: 0.8rem 0;
+		margin: 0.75rem 0;
 	}
 
-	.text-wrapper .reviewer{
-		font-size: 0.6rem;
-	}
-
+	.text-wrapper .reviewer,
 	.text-wrapper .role{
-		font-size: 0.6rem;
+		font-size: 0.65rem;
 	}
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 27.5rem) {
+
+  :root{
+
+	/* -------------------Values to change------------------- */
+
+	--testimonial-horizontal-padding: 0.5rem;
+
+	/* Image aspect ratio */
+	--image-width: 4;
+	--image-height: 2.25;
+
+	/* How much the image overlaps the container at the top */
+	--image-overlap-factor: 0.5;
+
+
+	/* -------------------Computed Values------------------- */
+
+	--testimonial-overlap-ratio: calc(
+		(var(--image-height) / var(--image-width))
+		* var(--image-overlap-factor)
+	);
+
+	--image-aspect-ratio: calc(
+		var(--image-width) / var(--image-height)
+	);
+
+	--image-top-margin: calc(
+		-100% * var(--testimonial-overlap-ratio)
+	);
+
+	--testimonial-wrapper-padding-top: calc(
+		(100% - (var(--testimonial-horizontal-padding) * 2))
+		* var(--testimonial-overlap-ratio)
+    );
+  }
+
+	.testimonial-wrapper{
+		background-color: white;
+		padding: var(--testimonial-wrapper-padding-top) 0 0;
+	}
 
 	.testimonial{
-		padding: 0 0.8rem 0 0.8rem;
-		gap: 0.8rem;
-		max-height: 17rem;
+		padding: 0 var(--testimonial-horizontal-padding) 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		justify-content: space-around;
+		max-height: none;
+		position: relative;
 	}
 
 	.testimonial .image-wrapper {
-		max-height: 19rem;
-		aspect-ratio: 2.5 / 4;
-		overflow: hidden;
-		border-radius: 12px;
+		aspect-ratio: var(--image-aspect-ratio);
+		margin: var(--image-top-margin) 0 0.5rem;
 	}
 
 	.text-wrapper i{
-		font-size: 0.85rem;
+		font-size: 1.5rem;
 	}
 
 	.text-wrapper .quote{
-		font-weight: 500;
-		font-size: 0.9rem;
-		line-height: 1.2;
-		color: #FFFFFF;
-		margin: 0.5rem 0;
+		margin: 1.25rem 0;
 	}
 
-	.text-wrapper .reviewer{
-		font-size: 0.45rem;
-	}
-
+	.text-wrapper .reviewer,
 	.text-wrapper .role{
-		font-size: 0.45rem;
+		font-size: 0.75rem;
 	}
 }
+
+
+

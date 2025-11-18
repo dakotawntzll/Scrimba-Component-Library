@@ -21,10 +21,11 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	gap: 0.25em;
+	min-height: 100vh;
+	gap: 1rem;
+	padding: 5rem 0;
+	padding-bottom: 5rem;
 }
 
 .component-container{
@@ -32,6 +33,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	gap: 0.25em;
+	flex-wrap: wrap;
 }
 
 
