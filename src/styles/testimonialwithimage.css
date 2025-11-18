@@ -79,7 +79,7 @@
 		font-size: 1rem;
 		line-height: 1.2;
 		color: #FFFFFF;
-		margin: 1rem 0;
+		margin: 0.8rem 0;
 	}
 
 	.text-wrapper .reviewer{
@@ -107,7 +107,7 @@
 	}
 
 	.text-wrapper i{
-		font-size: 1rem;
+		font-size: 0.85rem;
 	}
 
 	.text-wrapper .quote{
@@ -115,14 +115,14 @@
 		font-size: 0.9rem;
 		line-height: 1.2;
 		color: #FFFFFF;
-		margin: 1rem 0;
+		margin: 0.5rem 0;
 	}
 
 	.text-wrapper .reviewer{
-		font-size: 0.5rem;
+		font-size: 0.45rem;
 	}
 
 	.text-wrapper .role{
-		font-size: 0.5rem;
+		font-size: 0.45rem;
 	}
 }
